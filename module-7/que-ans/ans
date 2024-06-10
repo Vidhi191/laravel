@@ -1,0 +1,30 @@
+->How to pass Multiple Variable in route?
+ANS:
+define routes that accept multiple parameters with curly braces and slashes separating them.
+ex:
+Route::get('/users/{id}/{name}', ['UserController::class,'show'])->name('users').
+
+
+->How to pass variable which can be null in Route?
+ANS:
+You can pass a variable that can be null in a route in Laravel by using an optional path parameter.
+ex:
+return [ "ad_id" => null, "delivery_id" => null, "group_event_id" => null, ];
+
+
+
+->Generate Resource Controller for employee.
+ANS:
+The controller will have the following methods:
+index(): This method will display a list of all employees.
+create(): This method will display a form for creating a new employee.
+store(): This method will store the new employee in the database.
+show(): This method will display a single employee.
+edit(): This method will display a form for editing an employee.
+update(): This method will update the employee in the database.
+destroy(): This method will delete the employee from the database.
+
+
+->How to remove route caching?
+ANS:
+To clear the route cache in Laravel, you can use the following artisan command: php artisan route:clear.
